@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+/* style the appearance of the range slider */
+
+ input[type=range] {
+  -webkit-appearance: none;
+  width: 129px;
+  height: 15px;
+  border-radius: 5px; 
+  background: black;
+  outline: 2px solid rgb(233, 30, 99);
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+  transform: rotate(-90deg);
+} 
+
+/* style the thumb (handle) of the range slider */
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 30px;
+  border-radius: 5%;
+  opacity: 0.99;
+  background: rgb(0, 255, 179);
+  cursor: pointer;
+}  
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background-color: rgb(233, 30, 99);
+}
